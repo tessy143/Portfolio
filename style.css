@@ -1,0 +1,363 @@
+:root {
+  --primary: rgb(243, 243, 243);
+  --secondary: rgb(2, 2, 17);
+  /* --paragraph: rgb(241, 248, 246); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ########################################### */
+/* GENERAL CONFIGURATION */
+/* ########################################### */
+
+body {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Boldonse;
+  src: url(../FONTS/Boldonse-Regular.ttf);
+}
+
+@font-face {
+  font-family: openbold;
+  src: url(../FONTS/OpenSans_Condensed-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: opensemi;
+  src: url(../FONTS/OpenSans_Condensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../FONTS/Roboto.ttf);
+}
+
+.fab,
+.fas {
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  font-family: Boldonse;
+}
+h3,
+h4,
+h5 {
+  font-family: openbold;
+  font-size: 1.6em;
+}
+
+a {
+  font-family: opensemi;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: roboto;
+  font-size: 1.5em;
+}
+
+/* ########################################### */
+/* ########################################### */
+
+.navigation {
+  background-color: var(--secondary);
+  display: flex;
+  padding: 1.5em 5%;
+  align-items: center;
+  box-shadow: 0 0 1em rgba(1, 0, 0, 0.53);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.my-social-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-social-links a {
+  color: var(--primary);
+}
+.navigation ul {
+  padding-left: 4em;
+  display: flex;
+  list-style: none;
+  gap: 3em;
+}
+.navigation ul a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.navigation h2 a {
+  background-image: linear-gradient(220deg, blue, rgb(220, 119, 119));
+  -webkit-text-fill-color: text;
+  background-color: transparent;
+  color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+main {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.189)
+    ),
+    url(../image/image-3.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100lvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+main h1 {
+  font-size: 3em;
+}
+main p {
+  /* width: 40%; */
+  text-align: center;
+  line-height: 1.5;
+}
+main a {
+  border: none;
+  padding: 10px 25px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+main a:hover {
+  transform: translateY(10px);
+  background-image: radial-gradient(rgb(42, 9, 9), black);
+  box-shadow: 0 -1em rgba(1, 9, 41, 0.452), 0 1em 1em rgba(82, 5, 5, 0.275);
+}
+header {
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px;
+  color: rgb(255, 255, 255);
+}
+header p {
+  text-align: center;
+  padding: 20px 25px;
+}
+header h2 {
+  padding-top: 15px;
+}
+.sub-section {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3em 0;
+}
+.sub-section div {
+  width: 25%;
+  padding: 3em;
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.566);
+}
+.sub-section div p {
+  line-height: 1.5;
+}
+/* .sub-section img{
+  margin: 30px 70px;
+}
+.sub-section p{
+  text-align: center;
+}
+.sub-section-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.services {
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  --sz: 15px;
+  --c0: #000;
+  --c1: #040315;
+  --ts: 50% / calc(var(--sz) * 8) calc(var(--sz) * 16);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --dot: var(--c1) 0 calc(var(--sz) * 0.78),
+    #fff0 calc(calc(var(--sz) * 0.78) + 1px) 100%;
+  --dot2: radial-gradient(circle at 90% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 0%, var(--dot)) var(--ts);
+  --cg1: conic-gradient(from -90deg at 5% 51%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg2: conic-gradient(from -90deg at 25% 50%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg3: conic-gradient(
+      from -90deg at 30% 38.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg4: conic-gradient(
+      from -90deg at 50% 37.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg5: conic-gradient(from -90deg at 55% 26%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg6: conic-gradient(from -90deg at 75% 25%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg7: conic-gradient(
+      from -90deg at 80% 13.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg8: conic-gradient(
+      from -90deg at 100% 12.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+
+  background: var(--dot2), var(--dot2),
+    radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
+    var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
+    var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
+    var(--cg7), var(--cg8), var(--cg8),
+    linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
+    linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
+    repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
+}
+.services header p {
+  width: 50%;
+  line-height: 1.5;
+  color: lightblue;
+}
+
+.sub-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 3em 0;
+  background-color: lightgray;
+}
+
+.sub-section-2 .copy p {
+  font-size: 1.2em;
+}
+
+.sub-section-2 .my-social-links-2 {
+  display: flex;
+  gap: 2em;
+}
+.sub-section-2 .my-social-links-2 i {
+  color: blue;
+  font-size: 2em;
+  transition: all 0.2s ease-out;
+}
+
+.sub-section-2 .my-social-links-2 i:hover {
+  transform: scale(1.4, 1.4);
+  color: #000;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.718);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 755px) {
+  .services header {
+    width: 100%;
+  }
+  .sub-section {
+    flex-direction: column;
+  }
+  .services header p {
+    width: 100%;
+  }
+  .sub-section div {
+    width: 80%;
+    margin: auto;
+  }
+  main {
+    min-height: 500px;
+  }
+
+  .hamburger {
+    display: block !important;
+    color: white;
+    font-size: 18px;
+  }
+
+  nav ul {
+    background-image: linear-gradient(300deg, rgba(0, 0, 0, 0.385), rgba(2, 2, 91, 0.499)), url(../image/apurv-das-4soXarjm9do-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 55%;
+    flex-direction: column;
+    top: 60px;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 2em 0;
+    transition: all 0.3s ease-in;
+    left: -100%;
+  }
+  .active {
+    left: 0;
+  }
+
+  nav-open {
+    left: 100%;
+  }
+  nav-closed {
+    left: 0;
+  }
+  .fa-bars-staggered {
+    display: block !important;
+  }
+  .my-social-links {
+    margin-right: 24px;
+  }
+}
