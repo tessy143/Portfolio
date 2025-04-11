@@ -6,8 +6,6 @@ let icon = document.querySelector("#    icon");
 bars.onclick = function () {
   if (ul.classList.contains("active")) {
     ul.classList.remove("active");
-    icon.classList.remove("fas fa-bars-staggered");
-    icon.classList.add("fas fa-times");
   } else {
     ul.classList.add("active");
   }
