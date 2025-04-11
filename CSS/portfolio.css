@@ -1,0 +1,244 @@
+:root {
+  --primary: rgb(243, 243, 243);
+  --secondary: rgb(2, 2, 17);
+  /* --paragraph: rgb(241, 248, 246); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ########################################### */
+/* GENERAL CONFIGURATION */
+/* ########################################### */
+
+body {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Boldonse;
+  src: url(../FONTS/Boldonse-Regular.ttf);
+}
+
+@font-face {
+  font-family: openbold;
+  src: url(../FONTS/OpenSans_Condensed-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: opensemi;
+  src: url(../FONTS/OpenSans_Condensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../FONTS/Roboto.ttf);
+}
+
+.fab,
+.fas {
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  font-family: Boldonse;
+}
+h3,
+h4,
+h5 {
+  font-family: openbold;
+  font-size: 1.6em;
+}
+
+a {
+  font-family: opensemi;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: roboto;
+  font-size: 1.5em;
+}
+
+/* ########################################### */
+/* ########################################### */
+
+.navigation {
+  background-color: var(--secondary);
+  display: flex;
+  padding: 1.5em 5%;
+  align-items: center;
+  box-shadow: 0 0 1em rgba(1, 0, 0, 0.53);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.my-social-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-social-links a {
+  color: var(--primary);
+}
+.navigation ul {
+  margin-left: 4em;
+  display: flex;
+  list-style: none;
+  gap: 5%;
+}
+.navigation ul a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.navigation h2 a {
+  background-image: linear-gradient(220deg, blue, rgb(220, 119, 119));
+  -webkit-text-fill-color: text;
+  background-color: transparent;
+  color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+
+.click-links{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+.mega{
+    background-image: url(../image/portfolio-img/mega\ chicken\ web-image.png);
+    height: 500px;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.342);
+    transition: all .3s ease-in;
+    margin-bottom:3em;
+}
+
+.mega:hover{
+    transform: scale(0.8, 0.8);
+    filter: saturate(200%);
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.781);
+    border: 15px double rgb(255, 255, 255);
+}
+.wema{
+    background-image: url(../image/portfolio-img/wema\ bank\ web-image.png);
+    height: 500px;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.342);
+    transition: all .3s ease-in;
+    margin-bottom: 3.5em;
+}
+
+.wema:hover{
+    transform: scale(0.8, 0.8);
+    filter: saturate(200%);
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.781);
+    border: 15px double purple;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3em 0;
+}
+.sub-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 3em 0;
+  background-color: lightgray;
+}
+
+.sub-section-2 .copy p {
+  font-size: 1.2em;
+}
+
+.sub-section-2 .my-social-links-2 {
+  display: flex;
+  gap: 2em;
+}
+.sub-section-2 .my-social-links-2 i {
+  color: blue;
+  font-size: 2em;
+  transition: all .2s ease-out;
+}
+.sub-section-2 .my-social-links-2 i:hover {
+  transform: scale(1.4, 1.4);
+  color: #000;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.718);
+}
+
+
+@media (max-width: 755px) {
+  .services header {
+    width: 100%;
+  }
+  .sub-section {
+    flex-direction: column;
+  }
+  .services header p {
+    width: 100%;
+  }
+  .sub-section div {
+    width: 80%;
+    margin: auto;
+  }
+  main {
+    min-height: 500px;
+  }
+
+  .hamburger {
+    display: block !important;
+    color: white;
+    font-size: 18px;
+  }
+
+  nav ul {
+    background-image: linear-gradient(300deg, rgba(0, 0, 0, 0.385), rgba(2, 2, 91, 0.499)), url(../image/apurv-das-4soXarjm9do-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 55%;
+    flex-direction: column;
+    top: 60px;
+    height: 50vh;
+    text-align: center;
+    padding: 2em 0;
+    transition: all 0.3s ease-in;
+    left: -100%;
+  }
+  .active {
+    left: -15%;
+  }
+
+  nav-open {
+    left: 100%;
+  }
+  nav-closed {
+    left: 0;
+  }
+  .fa-bars-staggered {
+    display: block !important;
+  }
+  .my-social-links {
+    margin-right: 24px;
+  }
+}
+

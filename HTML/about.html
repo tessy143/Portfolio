@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navigation">
+      <h2><a href="#">TessyDynamite</a></h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <!-- <li><a href="./services.html">Services</a></i></li> -->
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <div class="my-social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter-x"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </nav>
+    <section class="sub-section">
+      <!-- header -->
+      <div class="sub-about-content">
+        <h1>About</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+          quidem?
+        </p>
+      </div>
+      <!-- about me container -->
+      <div class="abt-me-container">
+        <section class="abt-me-container-img"></section>
+        <article class="article">
+          <header>
+            <h1>UI/UX Designer & Web Developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, maiores?
+            </p>
+          </header>
+          <section class="details">
+            <div class="personnal-details">
+              <section>
+                <h3>Birthday:</h3>
+                <p>25 Nov 2004</p>
+              </section>
+              <section>
+                <h3>Age:</h3>
+                <p>30</p>
+              </section>
+            </div>
+            <div class="personnal-details">
+              <section>
+                <h3>Website:</h3>
+                <p>www.com</p>
+              </section>
+              <section>
+                <h3>Degree:</h3>
+                <p>Master</p>
+              </section>
+            </div>
+            <div class="personnal-details">
+              <section>
+                <h3>Phone:</h3>
+                <p>09161199334</p>
+              </section>
+              <section>
+                <h3>Email:</h3>
+                <p>awoteprecious@gmail.com</p>
+              </section>
+            </div>
+            <div class="personnal-details">
+              <section>
+                <h3>Country:</h3>
+                <p>Nigeria</p>
+              </section>
+              <section>
+                <h3>Freelance:</h3>
+                <p>Available</p>
+              </section>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="Sub-facts-1">
+        <h1>Facts</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, error?
+        </p>
+      </div>
+      <div
+        class="Sub-facts"
+        data-aos="fade-up-right"
+        data-aos-offset="200"
+        data-aos-delay="30"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+      >
+        <div>
+          <h1>20</h1>
+          <p>Clients</p>
+        </div>
+        <div>
+          <h1>10</h1>
+          <p>Personnal Projects</p>
+        </div>
+        <div>
+          <h1>5</h1>
+          <p>Completed Projects</p>
+        </div>
+        <div>
+          <h1>20</h1>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </section>
+    <section class="sub-section-2">
+      <div class="copy">
+        <p>&copy; Copyright TessyDynamite All Right Reserved</p>
+      </div>
+      <div class="my-social-links-2">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter-x"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      AOS.init();
+
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
